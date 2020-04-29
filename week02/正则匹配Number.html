@@ -1,0 +1,20 @@
+<script>
+    var reg = /(^(-|\+)?(0o|0b)?\d+$)|(^(-|\+)?0x[\da-z]+$)|(^(-|\+)?\d+(e-|e\+)?\.?\d*$)|(^(-|\+)?\d*\.?\d*(e-|e\+)?\d*$)|^(-|\+)?Infinity$/;
+    console.log(reg.test(0));
+    console.log(reg.test(1));
+    console.log(reg.test(+1));
+    console.log(reg.test(-1));
+    console.log(reg.test(11));
+    console.log(reg.test(0o12));
+    console.log(reg.test(-0O12));
+    console.log(reg.test(-0X11));
+    console.log(reg.test(+0x1a));
+    console.log(reg.test(-0X1a));
+    console.log(reg.test(123e3));
+    console.log(reg.test(123e-3));
+    console.log(reg.test(-3.1E+12));
+    console.log(reg.test(.1e-23));
+    console.log(reg.test(+Infinity));
+    console.log(reg.test(-Infinity));
+    console.log(reg.test(Infinity));
+</script>

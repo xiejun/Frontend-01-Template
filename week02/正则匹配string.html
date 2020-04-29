@@ -1,0 +1,14 @@
+<script>
+    var reg = /(?:[^"\n\\\r\u2028\u2029]|\\(?:['''\\bfnrtv\n\r\u2008\u2029]|\r\n)|\\x[0-9a-fA-F]{2}|\\u[0-9a-fA-f]{4}|\\[^0-9ux'''\\bfnrtv\n\\\r\u2028\u2029])*/;
+    console.log(reg.test('\n'));
+    console.log(reg.test('123'));
+    console.log(reg.test('abc'));
+    console.log(reg.test('AbBC'));
+    console.log(reg.test('AbBC'));
+    console.log(reg.test('AbBC'));
+    console.log(reg.test('Hello World!'));
+    console.log(reg.test('f\u006F\u006F'));
+</script>
+
+
+
